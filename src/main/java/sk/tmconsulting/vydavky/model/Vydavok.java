@@ -21,6 +21,10 @@ public class Vydavok {
     private String kategoria;
     @Column(name = "datum")
     private Date datum;
+    @Column(name = "pouzivatel")
+    private String pouzivatel;
+    @Column(name = "miestonakupu")
+    private String miestoNakupu;
 
     public Long getId() {
         return id;
@@ -60,5 +64,21 @@ public class Vydavok {
 
     public void setDatum(Date datum) {
         this.datum = datum;
+    }
+
+    public String getPouzivatel() {
+        return pouzivatel;
+    }
+
+    public void setPouzivatel(String pouzivatel) {
+        this.pouzivatel = pouzivatel;
+    }
+
+    public String getMiestoNakupu() {
+        return miestoNakupu;
+    }
+
+    public void setMiestoNakupu(String miestoNakupu) {
+        this.miestoNakupu = miestoNakupu;
     }
 }

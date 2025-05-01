@@ -13,6 +13,8 @@
         <th>Cena výdavku</th> <!-- th reprezentuje bunku daneho riadka -->
         <th>Kategória</th> <!-- th reprezentuje bunku daneho riadka -->
         <th>Dátum</th> <!-- th reprezentuje bunku daneho riadka -->
+        <th>Používateľ</th>
+        <th> Miesto nákupu</th>
         <th>Akcie</th>
     </tr> <!-- vytvorili sme riadok, KONIEC riadka -->
     </thead> <!-- Koniec hlavicky tabulky -->
@@ -22,6 +24,8 @@
         <td th:text="${vydavokObjekt.cena}"></td> <!-- rovnako aj pre cena -->
         <td th:text="${vydavokObjekt.kategoria}"></td> <!-- rovnako aj pre kategoria -->
         <td th:text="${vydavokObjekt.datum}"></td> <!-- rovnako aj pre datum -->
+        <td th:text="${vydavokObjekt.pouzivatel}"></td>
+        <td th:text="${vydavokObjekt.miestoNakupu}"></td>
         <td>
             <a th:href="@{/uprav-zaznam/{id}(id=${vydavokObjekt.id})}">Uprav záznam</a>
             <a th:href="@{/vymaz-zaznam/{id}(id=${vydavokObjekt.id})}">Vymaž záznam</a>
